@@ -1,0 +1,357 @@
+.root { 
+    -fx-font-family: "Consolas";
+    -fx-background-color: #242424;
+}
+
+/* =========================================================
+   Regular buttons - red raised button style
+   ========================================================= */
+.button {
+    -fx-padding: 8 15 15 15;
+    -fx-background-insets: 0, 0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 8;
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #6e1010 0%, #4a0909 100%),
+        #7a1717,
+        #b82e2e,
+        radial-gradient(center 50% 50%, radius 100%, #d94141, #8b1e1e);
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75), 4, 0, 0, 1);
+    -fx-font-weight: bold;
+    -fx-font-size: 1.1em;
+    -fx-text-fill: white;
+}
+
+.button:hover {
+    -fx-padding: 8 15 15 15;
+    -fx-background-insets: 0, 0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 8;
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #8b1e1e 0%, #5c1010 100%),
+        #9b2222,
+        #d94141,
+        radial-gradient(center 50% 50%, radius 100%, #ff6b6b, #a32626);
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.85), 5, 0, 0, 1);
+    -fx-font-weight: bold;
+    -fx-font-size: 1.1em;
+    -fx-text-fill: white;
+}
+
+.button:pressed {
+    -fx-padding: 10 15 13 15;
+    -fx-background-insets: 0, 0 0 3 0, 0 0 4 0, 0 0 5 0;
+    -fx-background-radius: 8;
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #3d0808 0%, #250404 100%),
+        #4a0b0b,
+        #6b1414,
+        radial-gradient(center 50% 50%, radius 100%, #8b1e1e, #3d0808);
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.60), 2, 0, 0, 1);
+    -fx-font-weight: bold;
+    -fx-font-size: 1.1em;
+    -fx-text-fill: white;
+}
+
+/* =========================================================
+   Left navigation toggle buttons
+   Red raised style with selected state
+   ========================================================= */
+.toggle-button {
+    -fx-padding: 8 8 15 8;
+    -fx-background-insets: 0, 0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 8;
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #6e1010 0%, #4a0909 100%),
+        #7a1717,
+        #b82e2e,
+        radial-gradient(center 50% 50%, radius 100%, #d94141, #8b1e1e);
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75), 4, 0, 0, 1);
+    -fx-font-weight: bold;
+    -fx-font-size: 1.0em;
+    -fx-text-fill: white;
+    -fx-alignment: CENTER;
+}
+
+.toggle-button:hover {
+    -fx-padding: 8 8 15 8;
+    -fx-background-insets: 0, 0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 8;
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #8b1e1e 0%, #5c1010 100%),
+        #9b2222,
+        #d94141,
+        radial-gradient(center 50% 50%, radius 100%, #ff6b6b, #a32626);
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.85), 5, 0, 0, 1);
+    -fx-font-weight: bold;
+    -fx-font-size: 1.0em;
+    -fx-text-fill: white;
+    -fx-alignment: CENTER;
+}
+
+.toggle-button:selected {
+    -fx-padding: 10 8 13 8;
+    -fx-background-insets: 0, 0 0 3 0, 0 0 4 0, 0 0 5 0;
+    -fx-background-radius: 8;
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #2b0505 0%, #170202 100%),
+        #3d0808,
+        #5c1010,
+        radial-gradient(center 50% 50%, radius 100%, #7a1717, #2b0505);
+    -fx-effect: innershadow(gaussian, rgba(0,0,0,0.75), 6, 0, 0, 2);
+    -fx-font-weight: bold;
+    -fx-font-size: 1.0em;
+    -fx-text-fill: white;
+    -fx-alignment: CENTER;
+}
+
+.toggle-button:selected:hover {
+    -fx-padding: 10 8 13 8;
+    -fx-background-insets: 0, 0 0 3 0, 0 0 4 0, 0 0 5 0;
+    -fx-background-radius: 8;
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #4a0b0b 0%, #250404 100%),
+        #5c1010,
+        #7a1717,
+        radial-gradient(center 50% 50%, radius 100%, #9b2222, #3d0808);
+    -fx-effect: innershadow(gaussian, rgba(0,0,0,0.75), 6, 0, 0, 2);
+    -fx-font-weight: bold;
+    -fx-font-size: 1.0em;
+    -fx-text-fill: white;
+    -fx-alignment: CENTER;
+}
+
+/* =========================================================
+   Labels
+   ========================================================= */
+.label {
+    -fx-text-fill: white;
+}
+
+.bar {
+    -fx-background-color: #1f1f1f;
+    -fx-border-color: #555555;
+    -fx-border-width: 1 1 1 1;
+}
+
+.status-bar {
+    -fx-background-color: #000000;
+    -fx-border-color: #555555;
+    -fx-border-width: 0 0 1 1;
+}
+
+.midi-connection-bar {
+    -fx-background-color: #1f1f1f;
+    -fx-border-color: #555555;
+    -fx-border-width: 0 1 0 0;
+}
+
+.cat-header {
+    -fx-background-color: #1f1f1f;
+    -fx-border-color: #555555;
+    -fx-border-width: 0 0 1 0;
+}
+
+
+/* =========================================================
+   Text fields, if used
+   ========================================================= */
+.text-field {
+    -fx-background-color: #333333;
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: #bbbbbb;
+    -fx-border-color: #555555;
+    -fx-border-radius: 4;
+    -fx-background-radius: 4;
+}
+
+.text-area {
+    -fx-background-color: #333333;
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: #bbbbbb;
+}
+
+.text-area .content {
+    -fx-background-color: #333333;
+}
+
+/* =========================================================
+   Top menu bar
+   ========================================================= */
+.menu-bar {
+    -fx-background-color: #1f1f1f;
+    -fx-border-color: #555555;
+    -fx-border-width: 0 0 1 0;
+}
+
+.menu-bar .label {
+    -fx-text-fill: white;
+}
+
+.menu {
+    -fx-background-color: transparent;
+}
+
+.menu:hover {
+    -fx-background-color: #333333;
+}
+
+.menu:showing {
+    -fx-background-color: #444444;
+}
+
+/* =========================================================
+   Menu dropdowns and right-click context menus
+   ========================================================= */
+.context-menu {
+    -fx-background-color: #242424;
+    -fx-border-color: #555555;
+    -fx-border-width: 1;
+    -fx-background-radius: 4;
+    -fx-border-radius: 4;
+}
+
+.menu-item {
+    -fx-background-color: #242424;
+    -fx-padding: 8 18 8 18;
+}
+
+.menu-item .label {
+    -fx-text-fill: white;
+}
+
+.menu-item:hover,
+.menu-item:focused {
+    -fx-background-color: #444444;
+}
+
+.menu-item:hover .label,
+.menu-item:focused .label {
+    -fx-text-fill: white;
+}
+
+.separator-menu-item .line {
+    -fx-border-color: #555555;
+}
+
+/* =========================================================
+   TabPane / tabs
+   ========================================================= */
+
+   .score-view-window {
+       -fx-background-color: white;
+   }
+   
+   .page-number {
+       -fx-text-fill: black;
+   }
+   
+   
+.tab-pane {
+    -fx-background-color: #242424;
+}
+
+.tab-pane .tab-header-area {
+    -fx-background-color: #242424;
+}
+
+.tab-pane .tab-header-background {
+    -fx-background-color: #242424;
+}
+
+.tab {
+    -fx-background-color: #333333;
+    -fx-border-color: #555555;
+    -fx-border-width: 0 1 0 0;
+}
+
+.tab:hover {
+    -fx-background-color: #444444;
+}
+
+.tab:selected {
+    -fx-background-color: #5c1010;
+}
+
+.tab .tab-label {
+    -fx-text-fill: white;
+}
+
+.tab-content-area {
+    -fx-background-color: #242424;
+}
+
+/* =========================================================
+   Dark mode ListView
+   ========================================================= */
+.list-view {
+    -fx-background-color: #242424;
+    -fx-border-color: #555555;
+    -fx-border-width: 1;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+}
+
+.list-view .viewport {
+    -fx-background-color: #242424;
+}
+
+.list-cell {
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 10;
+}
+
+/* Alternating row colors for filled and empty rows */
+.list-cell:odd {
+    -fx-background-color: #333333;
+}
+
+.list-cell:even {
+    -fx-background-color: #242424;
+}
+
+.list-cell:empty:odd {
+    -fx-background-color: #333333;
+}
+
+.list-cell:empty:even {
+    -fx-background-color: #242424;
+}
+
+.list-cell:hover {
+    -fx-background-color: #444444;
+}
+
+.list-cell:selected {
+    -fx-background-color: #666666;
+    -fx-text-fill: white;
+}
+
+/* =========================================================
+   Scroll bars
+   ========================================================= */
+.scroll-bar {
+    -fx-background-color: #242424;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: #555555;
+    -fx-background-radius: 6;
+}
+
+.scroll-bar .thumb:hover {
+    -fx-background-color: #666666;
+}
+
+.scroll-bar .track {
+    -fx-background-color: #242424;
+}
+
+.scroll-bar .increment-button,
+.scroll-bar .decrement-button {
+    -fx-background-color: #242424;
+}
+
+.scroll-bar .increment-arrow,
+.scroll-bar .decrement-arrow {
+    -fx-background-color: white;
+}
